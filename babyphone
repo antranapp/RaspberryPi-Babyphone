@@ -1,0 +1,34 @@
+#! /bin/sh
+# /etc/init.d/babyphone
+
+### BEGIN INIT INFO
+# Provides:          babyphone
+# Required-Start:    $remote_fs $syslog $network
+# Required-Stop:     $remote_fs $syslog $network
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Simple script to start Picam at boot
+# Description:       A simple script to start Picam at boot
+### END INIT INFO
+
+# If you want a command to always run, put it here
+
+# Carry out specific functions when asked to by the system
+case "$1" in
+  start)
+    echo "Starting Babyphone"
+    # run application you want to start
+    sudo /home/pi/babyphone/run_picam.sh
+    ;;
+  stop)
+    echo "Stopping Babyphone"
+    # kill application you want to stop
+    killall picam
+    ;;
+  *)
+    echo "Usage: /etc/init.d/picam {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
