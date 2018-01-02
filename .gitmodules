@@ -1,0 +1,3 @@
+[submodule "picam-viewer"]
+	path = picam-viewer
+	url = https://github.com/kamranayub/picam-viewer.git
