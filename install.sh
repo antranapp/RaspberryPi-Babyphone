@@ -2,7 +2,7 @@
 
 # Update RPi. Install required package
 sudo apt-get update && sudo apt-get -y dist-upgrade
-sudo apt-get install libharfbuzz0b libfontconfig1 vim nginx -y
+sudo apt-get install libharfbuzz0b libfontconfig1 vim nginx git -y
 
 cd ~/babyphone
 git submodule update --init
