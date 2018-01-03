@@ -3,7 +3,7 @@ from signal import pause
 import os, sys
 
 offGPIO = int(sys.argv[1]) if len(sys.argv) >= 2 else 3
-holdTime = int(sys.argv[2]) if len(sys.argv) >= 3 else 6
+holdTime = int(sys.argv[2]) if len(sys.argv) >= 3 else 3
 ledGPIO = int(sys.argv[3]) if len(sys.argv) >= 4 else 21
 
 def when_pressed():

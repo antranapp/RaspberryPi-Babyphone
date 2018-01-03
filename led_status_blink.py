@@ -3,8 +3,7 @@ from signal import pause
 import warnings, os, sys
 
 offGPIO = int(sys.argv[1]) if len(sys.argv) >= 2 else 3
-offtime = int(sys.argv[2]) if len(sys.argv) >= 3 else 6
-offtime = 6       # shut down after offtime seconds
+offtime = int(sys.argv[2]) if len(sys.argv) >= 3 else 3
 mintime = 1       # notice switch after mintime seconds
 actledGPIO = 21   # activity LED
 powerledGPIO = 35 # power LED
