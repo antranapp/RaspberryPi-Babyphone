@@ -40,7 +40,7 @@ cd ~
 git clone https://github.com/peacemoon/RaspberryPi-Babyphone.git ~/babyphone
 cd ~/babyphone
 ./install.sh
-sudo systemctl reboot
+sudo shutdown -h now
 ```
 
 # Step 3: Access video stream

@@ -1,13 +1,13 @@
 #!/bin/sh
 
 # Update RPi. Install required package
-sudo apt-get update 
+sudo apt-get update
 #sudo apt-get -y upgrade
 
 sudo apt-get install rpi-update
 sudo rpi-update
 
-sudo apt-get install avahi-daemon libharfbuzz0b libfontconfig1 vim nginx git -y
+sudo apt-get install -y avahi-daemon libharfbuzz0b libfontconfig1 vim nginx git
 
 git submodule update --init
 
@@ -23,7 +23,7 @@ sudo chmod +x /etc/init.d/shutdown
 sudo update-rc.d shutdown defaults
 
 sudo cp -f default /etc/nginx/sites-available/default
-sudo systemctl restart nginx
+sudo service nginx restart
 
 sudo cp -rf ~/babyphone/picam-viewer/* /var/www/html
 
