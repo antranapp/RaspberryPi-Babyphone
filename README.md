@@ -46,7 +46,7 @@ sudo systemctl reboot
 # Step 3: Access video stream
 There are 2 ways to access the video stream:
 
-* Web browser: just open http://babypi.local or http://<ip of the RPi>
+* Web browser: just open http://babypi.local or http://< ip of the RPi >
 * VLC: open the network stream http://babypi.local/hls/index.m3u8
 
 
