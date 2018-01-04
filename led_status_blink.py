@@ -33,4 +33,3 @@ btn = Button(offGPIO, hold_time=mintime, hold_repeat=True)
 btn.when_held = shutdown
 btn.when_pressed = when_pressed
 btn.when_released = when_released
-pause()

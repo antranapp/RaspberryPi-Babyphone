@@ -16,7 +16,7 @@ def when_released():
 
 def shutdown():
     os.system("sudo shutdown -h now")
-    
+
 led = LED(ledGPIO)
 btn = Button(offGPIO, hold_time=holdTime)
 btn.when_held = shutdown

@@ -13,12 +13,12 @@
 # Carry out specific functions when asked to by the system
 case "$1" in
   start)
-    echo "Starting led_status_blink.py"
-    python /home/pi/babyphone/led_status_blink.py &
+    echo "Starting led_status.py"
+    python /home/pi/babyphone/led_status.py &
     ;;
   stop)
-    echo "Stopping led_status_blink.py"
-    pkill -f /home/pi/babyphone/led_status_blink.py
+    echo "Stopping shutdown.py"
+    pkill -f /home/pi/babyphone/led_status.py
     ;;
   *)
     echo "Usage: /etc/init.d/shutdown {start|stop}"
