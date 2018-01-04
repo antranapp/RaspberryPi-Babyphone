@@ -15,7 +15,7 @@ def shutdown(b):
     # the button down. E.g., at 2 seconds, use 1/2 second rate.
     leds.blink(on_time=0.5/p, off_time=0.5/p)
     if p > offtime:
-        os.system("sudo poweroff")
+        os.system("sudo shutdown -h now")
 
 def when_pressed():
     # start blinking with 1/2 second rate
