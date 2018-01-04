@@ -3,9 +3,12 @@
 # Update RPi. Install required package
 sudo apt-get update 
 #sudo apt-get -y upgrade
+
+sudo apt-get install rpi-update
+sudo rpi-update
+
 sudo apt-get install avahi-daemon libharfbuzz0b libfontconfig1 vim nginx git -y
 
-cd ~/babyphone
 git submodule update --init
 
 sudo touch /var/log/picam.log
